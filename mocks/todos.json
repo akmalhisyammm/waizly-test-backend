@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "6374709f57db60c6312dd7b0",
+    "title": "Wash the dishes",
+    "status": "Pending"
+  },
+  {
+    "_id": "6374709f57db60c6312dd7b1",
+    "title": "Clean the house",
+    "status": "Pending"
+  },
+  {
+    "_id": "6374709f57db60c6312dd7b2",
+    "title": "Do the laundry",
+    "status": "Done"
+  },
+  {
+    "_id": "6374709f57db60c6312dd7b3",
+    "title": "Buy groceries",
+    "status": "Pending"
+  },
+  {
+    "_id": "6374709f57db60c6312dd7b4",
+    "title": "Pay the bills",
+    "status": "Done"
+  },
+  {
+    "_id": "6374709f57db60c6312dd7b5",
+    "title": "Walk the dog",
+    "status": "Done"
+  }
+]
