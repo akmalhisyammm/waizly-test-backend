@@ -7,10 +7,10 @@ const getAllTodos = async () => {
   return res;
 };
 
-const getTodosByStatus = async (req) => {
-  const { status } = req.params;
+const getTodoById = async (req) => {
+  const { id } = req.params;
 
-  const res = await Todos.find({ status });
+  const res = await Todos.findById(id);
 
   if (!res) {
     throw new NotFoundError('Todo not found.');
@@ -20,18 +20,18 @@ const getTodosByStatus = async (req) => {
 };
 
 const createTodo = async (req) => {
-  const { title } = req.body;
+  const { title, description } = req.body;
 
-  const res = await Todos.create({ title, status: 'Pending' });
+  const res = await Todos.create({ title, description, status: 'Pending' });
 
   return res;
 };
 
-const updateTodoTitle = async (req) => {
+const updateTodo = async (req) => {
   const { id } = req.params;
-  const { title } = req.body;
+  const { title, description } = req.body;
 
-  const check = await Todos.findOne({ _id: { $ne: id }, title });
+  const check = await Todos.findOne({ _id: { $ne: id }, title, description });
 
   if (check) {
     throw new BadRequestError('Todo already exist.');
@@ -39,7 +39,7 @@ const updateTodoTitle = async (req) => {
 
   const res = await Todos.findOneAndUpdate(
     { _id: id },
-    { title },
+    { title, description },
     { new: true, runValidators: true }
   );
 
@@ -81,9 +81,9 @@ const deleteTodo = async (req) => {
 
 module.exports = {
   getAllTodos,
-  getTodosByStatus,
+  getTodoById,
   createTodo,
-  updateTodoTitle,
+  updateTodo,
   updateTodoStatus,
   deleteTodo,
 };

@@ -2,31 +2,37 @@
   {
     "_id": "6374709f57db60c6312dd7b0",
     "title": "Wash the dishes",
+    "description": "Wash the dishes and put them in the dishwasher",
     "status": "Pending"
   },
   {
     "_id": "6374709f57db60c6312dd7b1",
     "title": "Clean the house",
+    "description": "Clean the house until it's spotless",
     "status": "Pending"
   },
   {
     "_id": "6374709f57db60c6312dd7b2",
     "title": "Do the laundry",
+    "description": "Do the laundry with the new washing machine",
     "status": "Done"
   },
   {
     "_id": "6374709f57db60c6312dd7b3",
     "title": "Buy groceries",
+    "description": "Buy groceries at the supermarket",
     "status": "Pending"
   },
   {
     "_id": "6374709f57db60c6312dd7b4",
     "title": "Pay the bills",
+    "description": "Pay the bills to avoid late fees",
     "status": "Done"
   },
   {
     "_id": "6374709f57db60c6312dd7b5",
     "title": "Walk the dog",
+    "description": "Walk the dog in the park",
     "status": "Done"
   }
 ]

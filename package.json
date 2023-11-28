@@ -2,7 +2,7 @@
   "name": "rikutodo-server",
   "version": "1.0.0",
   "private": true,
-  "description": "RikuTodo server app",
+  "description": "Rikutodo server app",
   "author": "Muhammad Akmal Hisyam",
   "license": "MIT",
   "scripts": {

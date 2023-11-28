@@ -1,9 +1,9 @@
 const { StatusCodes } = require('http-status-codes');
 const {
   getAllTodos,
-  getTodosByStatus,
+  getTodoById,
   createTodo,
-  updateTodoTitle,
+  updateTodo,
   updateTodoStatus,
   deleteTodo,
 } = require('../../../services/mongoose/todos');
@@ -20,7 +20,7 @@ const index = async (req, res, next) => {
 
 const find = async (req, res, next) => {
   try {
-    const result = await getTodosByStatus(req);
+    const result = await getTodoById(req);
 
     res.status(StatusCodes.OK).json({ data: result });
   } catch (err) {
@@ -40,7 +40,7 @@ const create = async (req, res, next) => {
 
 const update = async (req, res, next) => {
   try {
-    const result = await updateTodoTitle(req);
+    const result = await updateTodo(req);
 
     res.status(StatusCodes.OK).json({ data: result });
   } catch (err) {
