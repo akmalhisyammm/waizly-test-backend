@@ -3,36 +3,48 @@
     "_id": "6374709f57db60c6312dd7b0",
     "title": "Wash the dishes",
     "description": "Wash the dishes and put them in the dishwasher",
+    "author": "Sakura Miyawaki",
+    "deadline": "2023-12-01T06:00:00.000Z",
     "status": "Pending"
   },
   {
     "_id": "6374709f57db60c6312dd7b1",
     "title": "Clean the house",
     "description": "Clean the house until it's spotless",
+    "author": "Eunchae Hong",
+    "deadline": "2023-12-02T08:00:00.000Z",
     "status": "Pending"
   },
   {
     "_id": "6374709f57db60c6312dd7b2",
     "title": "Do the laundry",
     "description": "Do the laundry with the new washing machine",
+    "author": "Yunjin Huh",
+    "deadline": "2023-12-03T10:00:00.000Z",
     "status": "Done"
   },
   {
     "_id": "6374709f57db60c6312dd7b3",
     "title": "Buy groceries",
     "description": "Buy groceries at the supermarket",
+    "author": "Kazuha Nakamura",
+    "deadline": "2023-12-04T12:00:00.000Z",
     "status": "Pending"
   },
   {
     "_id": "6374709f57db60c6312dd7b4",
     "title": "Pay the bills",
     "description": "Pay the bills to avoid late fees",
+    "author": "Chaewon Kim",
+    "deadline": "2023-12-05T14:00:00.000Z",
     "status": "Done"
   },
   {
     "_id": "6374709f57db60c6312dd7b5",
     "title": "Walk the dog",
     "description": "Walk the dog in the park",
+    "author": "Sakura Miyawaki",
+    "deadline": "2023-12-06T16:00:00.000Z",
     "status": "Done"
   }
 ]

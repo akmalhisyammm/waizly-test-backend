@@ -20,18 +20,18 @@ const getTodoById = async (req) => {
 };
 
 const createTodo = async (req) => {
-  const { title, description } = req.body;
+  const { title, description, author, deadline } = req.body;
 
-  const res = await Todos.create({ title, description, status: 'Pending' });
+  const res = await Todos.create({ title, description, author, deadline, status: 'Pending' });
 
   return res;
 };
 
 const updateTodo = async (req) => {
   const { id } = req.params;
-  const { title, description } = req.body;
+  const { title, description, author, deadline } = req.body;
 
-  const check = await Todos.findOne({ _id: { $ne: id }, title, description });
+  const check = await Todos.findOne({ _id: { $ne: id }, title, description, author, deadline });
 
   if (check) {
     throw new BadRequestError('Todo already exist.');
@@ -39,7 +39,7 @@ const updateTodo = async (req) => {
 
   const res = await Todos.findOneAndUpdate(
     { _id: id },
-    { title, description },
+    { title, description, author, deadline },
     { new: true, runValidators: true }
   );
 

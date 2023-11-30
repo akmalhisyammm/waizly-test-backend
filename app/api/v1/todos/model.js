@@ -14,6 +14,16 @@ const todosSchema = new mongoose.Schema(
       maxLength: 200,
       required: [true, 'Todo description is required.'],
     },
+    author: {
+      type: String,
+      minLength: 3,
+      maxLength: 50,
+      required: [true, 'Todo author is required.'],
+    },
+    deadline: {
+      type: Date,
+      required: [true, 'Todo deadline is required.'],
+    },
     status: {
       type: String,
       enum: ['Pending', 'Done'],
